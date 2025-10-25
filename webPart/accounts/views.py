@@ -151,7 +151,7 @@ def submit_task_view(request):
                     'email': user.email,
                     'user_id_in_app': user.id
                 },
-                'user_type': user.user_type,  # <--- ИЗМЕНЕНИЕ ЗДЕСЬ
+                'user_type': user.user_type,
                 'task_payload': task_data,
                 'timestamp_utc': timezone.now().isoformat()
             }
