@@ -90,8 +90,8 @@ WSGI_APPLICATION = 'webPart.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'python_tasks_db',
-        'USER': 'postgres',
+        'NAME': 'postgres',
+        'USER': 'petr',
         'PASSWORD': os.environ.get('DB_PASSWORD', '123'),  # Используйте переменную окружения!
         'HOST': os.environ.get('DB_HOST', 'localhost'),
         'PORT': os.environ.get('DB_PORT', '5432'),
